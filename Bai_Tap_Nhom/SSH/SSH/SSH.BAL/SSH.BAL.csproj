@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SSH.BAL.Interface\SSH.BAL.Interface.csproj" />
+    <ProjectReference Include="..\SSH.DAL.Interface\SSH.DAL.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

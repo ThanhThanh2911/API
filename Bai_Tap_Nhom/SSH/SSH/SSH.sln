@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSH.API", "SSH.API\SSH.API.csproj", "{381F5B52-6A7B-429B-9403-C414B403406C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSH.Domain", "SSH.Domain\SSH.Domain.csproj", "{F00441AF-77C0-4DD5-A1F0-8FF101314BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSH.DAL.Interface", "SSH.DAL.Interface\SSH.DAL.Interface.csproj", "{87A50B0B-098B-4945-A6BE-EC2DE037D2FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSH.DAL", "SSH.DAL\SSH.DAL.csproj", "{757A65D2-BCB7-4622-9D24-A70822F3F2DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSH.BAL.Interface", "SSH.BAL.Interface\SSH.BAL.Interface.csproj", "{CD3E5763-BE4F-4ADF-8ED0-F4DF0159B0A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSH.BAL", "SSH.BAL\SSH.BAL.csproj", "{B708D85C-8A74-4B2F-9877-56DBE91A7883}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{381F5B52-6A7B-429B-9403-C414B403406C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381F5B52-6A7B-429B-9403-C414B403406C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381F5B52-6A7B-429B-9403-C414B403406C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381F5B52-6A7B-429B-9403-C414B403406C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00441AF-77C0-4DD5-A1F0-8FF101314BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00441AF-77C0-4DD5-A1F0-8FF101314BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00441AF-77C0-4DD5-A1F0-8FF101314BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00441AF-77C0-4DD5-A1F0-8FF101314BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A50B0B-098B-4945-A6BE-EC2DE037D2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A50B0B-098B-4945-A6BE-EC2DE037D2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A50B0B-098B-4945-A6BE-EC2DE037D2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A50B0B-098B-4945-A6BE-EC2DE037D2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757A65D2-BCB7-4622-9D24-A70822F3F2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757A65D2-BCB7-4622-9D24-A70822F3F2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757A65D2-BCB7-4622-9D24-A70822F3F2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757A65D2-BCB7-4622-9D24-A70822F3F2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3E5763-BE4F-4ADF-8ED0-F4DF0159B0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3E5763-BE4F-4ADF-8ED0-F4DF0159B0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3E5763-BE4F-4ADF-8ED0-F4DF0159B0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3E5763-BE4F-4ADF-8ED0-F4DF0159B0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B708D85C-8A74-4B2F-9877-56DBE91A7883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B708D85C-8A74-4B2F-9877-56DBE91A7883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B708D85C-8A74-4B2F-9877-56DBE91A7883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B708D85C-8A74-4B2F-9877-56DBE91A7883}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72CFDAB1-6574-4CA0-A857-1455A0BA8DBD}
+	EndGlobalSection
+EndGlobal

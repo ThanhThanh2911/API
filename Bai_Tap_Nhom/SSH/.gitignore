@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/SSH/.vs/SSH
+/SSH/SSH.API/obj
+/SSH/SSH.BAL/obj
+/SSH/SSH.BAL.Interface/obj
+/SSH/SSH.DAL/obj
+/SSH/SSH.DAL.Interface/obj
+/SSH/SSH.Domain/obj
+/SSH/SSH.API/bin/Debug/netcoreapp2.2
+/SSH/SSH.BAL/bin/Debug/netcoreapp2.2
+/SSH/SSH.BAL.Interface/bin/Debug/netcoreapp2.2
+/SSH/SSH.DAL/bin/Debug/netcoreapp2.2
+/SSH/SSH.DAL.Interface/bin/Debug/netcoreapp2.2
+/SSH/SSH.Domain/bin/Debug/netcoreapp2.2

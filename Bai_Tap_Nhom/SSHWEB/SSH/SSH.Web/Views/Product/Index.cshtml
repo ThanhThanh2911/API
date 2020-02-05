@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Product Page";
+}
+
+<h1>Sản phẩm</h1>
+<div>
+    <a href="javascripts:void(0);" class="btn btn-outline-success"
+       onclick="product.openAddEditModal()">Tạo mới</a>
+</div>
+
+<div class="row" style="width: 100%">
+    <div class="col-12">
+        <table class="table table-bordered table-hover table-striped" width="100%" id="tbProduct">
+        </table>
+    </div>
+
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="addEditModel">
+    <div class="modal-dialog ">
+        <!--modal-lg-->
+        <div class="modal-content">
+            <form id="formAddEditProduct">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Tạo sản phẩm mới</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input hidden id="ID" name="ID" value="0" />
+                    <div class="row form-group">
+                        <div class="col-3 col-md-4">
+                            <label class="float-right">Tên sản phẩm</label>
+                        </div>
+                        <div class="col-9 col-md-8">
+                            <input type="text" class="form-control" id="ProductName" name="ProductName"
+                                   data-rule-required="true"
+                                   data-msg-required="Đây là trường bắt buộc." />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-3 col-md-4">
+                            <label class="float-right">Giá</label>
+                        </div>
+                        <div class="col-9 col-md-8">
+                            <input type="text" class="form-control" id="Price" name="Price" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-3 col-md-4">
+                            <label class="float-right">Loại sản phẩm</label>
+                        </div>
+                        <div class="col-9 col-md-8">
+                            <select class="form-control" id="CategoryName" name="CategoryName"></select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-3 col-md-4">
+                            <label class="float-right">Nhãn hiệu</label>
+                        </div>
+                        <div class="col-9 col-md-8">
+                            <select type="text" class="form-control" id="BrandName" name="BrandName" ></select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="javascripts:void(0);" class="btn btn-outline-info" onclick="product.save()">Lưu</a>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Hủy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section css{
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/datatables/css/jquery.dataTables.css" rel="stylesheet" />
+    @*<link href="~/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />*@
+}
+
+@section Scripts{
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootbox.js/bootbox.min.js"></script>
+    <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+    <script src="~/js/Product/product.js"></script>
+}

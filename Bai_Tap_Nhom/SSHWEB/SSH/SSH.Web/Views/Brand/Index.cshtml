@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <a href="javascripts:void(0);"
+       class="btn btn-outline-success"
+       onclick="brand.openAddEditModal()"><i class="fas fa-plus-circle"></i></a>
+</div>
+
+<div class="row" style="width:100%">
+    <div class="col-12">
+        <table class="table table-bordered table-hover table-striped" style="width:100%;" id="tbBrand">
+        </table>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="addEditBrand">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="frmAddEditBrand">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Create Brand</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input class="form-control" hidden id="ID" name="ID"/>
+                    <div class="row form-group">
+                        <div class="col-3 col-md-4">
+                            <label class="float-right">Brand Name</label>
+                        </div>
+                        <div class="col-9 col-md-8">
+                            <input type="text" class="form-control" id="BrandName" name="BrandName" />
+                        </div>
+                        <div class="col-3 col-md-4">
+                            <label class="float-right">Paren ID</label>
+                        </div>
+                        <div class="col-9 col-md-8">
+                            <input type="number" min="0" class="form-control" id="ParenID" name="ParenID" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="javascripts:void(0);"
+                       class="btn btn-outline-info"
+                       onclick="brand.save()">Save</a>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Exit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section css{
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/datatables/css/jquery.dataTables.css" rel="stylesheet" />
+}
+
+
+@section Scripts{
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootbox.js/bootbox.min.js"></script>
+    <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+    <script src="~/js/Brand/brand.js"></script>
+}
+
